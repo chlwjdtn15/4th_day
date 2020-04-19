@@ -1,8 +1,8 @@
 class Main {
   public static void main(String[] args) {
     
-
-    3일차 연습문제
+    /*
+    //3일차 연습문제
 
     //문제 #1 자동차 객체 마다 다른 최고속력.
 
@@ -24,14 +24,41 @@ class Main {
       car1.달리다();
     }
 
+    int[] arr = new int[3];
+    arr[0] = 1;
+    arr[1] = 2;
+    arr[2] = 3;
+
+
+    for (int x = 0 ; x <= 2; x++){
+      System.out.printf("%d\n", arr[x]);
+    }*/
+
+
+
+
+
+
+
+
+        // 구현시작
+        car car1 = new car();
+
+        car1.달리다1(); //1 번 자동차는 210 로 달림
+        car1.달리다2(); //2번 자동차는 230 로 달림
+    
 
   }
 }
 
 
 class car {
-  int fs;
-  void 달리다() {
-    System.out.println("달리다.");
+  int fs = 230;
+  void 달리다1() {
+    int speed = 210;
+    System.out.printf("1번 자동차는 %d 로 달립니다.\n", speed);
+  }
+  void 달리다2(){
+    System.out.printf("2번 자동차는 %d 로 달립니다.\n", this.fs );
   }
 }
